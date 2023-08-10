@@ -15,7 +15,7 @@ variables:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-- bash: echo $(env)
+- bash: echo $(foo)
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
