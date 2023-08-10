@@ -8,10 +8,14 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+variables:
+   env: dev
+
 
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- bash: echo $(dev)
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
